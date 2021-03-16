@@ -1,0 +1,16 @@
+Поменял 
+
+class Meta:
+        ordering = ('shu',)
+
+на:
+
+class Meta:
+        ordering = ('-name',)
+
+
+и удалил: 
+
+shu = models.CharField(max_length=10)
+
+поле, шкала измерения остроты соуса, но я делаю магазин вещей 
