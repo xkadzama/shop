@@ -9,6 +9,10 @@ class Category(models.Model):
 
     class Meta:
         ordering = ('-name',)
+        verbose_name_plural = 'categories'
+
+    def __str__(self):
+        return self.name[:30]
 
 
 
@@ -25,3 +29,7 @@ class Product(models.Model):
 
     class Meta:
         ordering = ('-name',)
+
+
+    def __str__(self):
+        return self.name[:30]
